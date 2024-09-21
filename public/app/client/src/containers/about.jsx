@@ -6,7 +6,6 @@ import LinkedIn from 'assets/linkedin.png';
 import Twitter from 'assets/twitter.png';
 import Instagram from 'assets/instagram.png';
 import Facebook from 'assets/facebook.png';
-import Whatsapp from 'assets/Whatsapp.png';
 
 
 
