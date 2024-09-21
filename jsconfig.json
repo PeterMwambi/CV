@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "baseUrl": "public/app/client/src",
+        "paths": {
+            "containers/*": [
+                "containers/*"
+            ],
+            "pages/*": [
+                "pages/*"
+            ],
+            "assets/*": [
+                "assets/*"
+            ],
+            "css/*": [
+                "css/*"
+            ],
+            "components/*": [
+                "components/*"
+            ],
+            "modules/*": [
+                "modules/*"
+            ]
+        }
+    },
+    "include": [
+        "public/app/client/src/**/*"
+    ]
+}

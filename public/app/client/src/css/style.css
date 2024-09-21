@@ -1,0 +1,199 @@
+@import url(./fonts/fonts.css);
+
+:root {
+    --btn-box-shadow: 0px 4px 12px 5px #93f1ff94;
+    --btn-bg-light: #29aae3;
+    --btn-bg-light-variant-2: #60e7fc;
+    --btn-bg-dark: #1a707e;
+    --btn-color-light: #ffffff;
+    --bg-dark-variant-1: #004f71;
+    --bg-muted: #717171;
+    --btn-color-dark: #000000;
+    --default-heading-color: var(--bg-dark-variant-1);
+    --default-heading-font: franklinGothic;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: bhanschrift;
+    font-size: 20px
+}
+
+h3 {
+    color: var(--bg-muted);
+}
+
+h1 {
+    font-family: var(--default-heading-font);
+    color: var(--default-heading-color);
+    padding-top: 4rem;
+}
+
+.icon-sm {
+    max-width: 22px;
+}
+
+.icon {
+    max-width: 26px;
+}
+
+.icon-1 {
+    max-width: 52px;
+}
+
+.icon-md {
+    max-width: 64px;
+}
+
+.icon-md-1 {
+    max-width: 72px;
+}
+
+.icon-x-md {
+    max-width: 100px;
+}
+
+.icon-lg {
+    max-width: 192px;
+}
+
+.text-sm {
+    font-size: 14px !important;
+}
+
+.pt-lg {
+    padding-top: 5rem;
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    background-color: transparent;
+    color: black;
+    animation: blink 1s step-end infinite;
+}
+
+
+/* Navbar */
+.dpz__logo {
+    vertical-align: middle;
+    max-width: 96px;
+}
+
+
+
+#dpz__navbar .cta-button,
+.cta-button {
+    background-color: var(--btn-bg-light);
+    color: var(--btn-color-light);
+    border-radius: 1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    transition: ease-in 0.3s;
+    font-size: 18px;
+    margin-right: 2rem;
+}
+
+#dpz__navbar .cta-button:hover,
+.cta-button:hover {
+    background: none !important;
+    background-color: var(--btn-bg-light-variant-2) !important;
+    color: var(--bg-dark-variant-1);
+    box-shadow: var(--btn-box-shadow)
+}
+
+/* Header */
+#dpz__header {
+    background: linear-gradient(60deg, #fffffff1, #ffffffcf, #ffffff), var(--header-bg-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 20%;
+    padding-bottom: 3rem;
+}
+
+#dpz__header .body h1 {
+    padding: 15rem 0rem 1rem 0rem;
+    font-family: var(--default-heading-font);
+    text-align: start;
+    color: var(--default-heading-color);
+    animation: fade-in 1s;
+}
+
+#dpz__header .body p {
+    font-size: 22px;
+}
+
+#dpz__header .keypress-simulator {
+    height: 50vh
+}
+
+#dpz__header img {
+    animation: fade-in 1s;
+}
+
+
+
+.nav-button {
+    color: var(--btn-color-light);
+    background-color: var(--btn-bg-dark);
+    font-size: 18px;
+    margin-right: 2rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.nav-button:hover {
+    background-color: var(--btn-bg-light-variant-2) !important;
+    color: var(--btn-color-dark);
+    box-shadow: var(--btn-box-shadow)
+}
+
+.nav-link {
+    margin-right: 3rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: var(--bg-muted);
+}
+
+
+/* Skills */
+.progress-bar {
+    background-color: var(--btn-bg-dark);
+}
+
+/* About */
+#dpz__about {
+    background-color: #f3f3f3;
+}
+
+
+/* Projects */
+#dpz__projects {
+    background-color: #f3f3f3;
+    margin-top: 3rem;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,30 @@
+/* Myriad regular */
+
+@font-face {
+  font-family: "myriadRegular";
+  src: url(../fonts/myriad-pro/myriadpro-regular.otf);
+}
+
+@font-face {
+  font-family: "myriadLight";
+  src: url(../fonts/myriad-pro/myriadpro-light.otf);
+}
+
+@font-face {
+  font-family: "myriadSemiBold";
+  src: url(../fonts/myriad-pro/myriadpro-semibold.otf);
+}
+
+/* Bahnschrift */
+
+@font-face {
+  font-family: "bhanschrift";
+  src: url(../fonts/bahnschrift/bahnschrift.ttf);
+}
+
+/* Franklin Gothic */
+
+@font-face {
+  font-family: "franklinGothic";
+  src: url(../fonts/franklin-gothic/FranklinGothic.ttf);
+}
