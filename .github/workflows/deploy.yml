@@ -23,7 +23,7 @@ jobs:
       - name: 📦 Upload static site
         uses: actions/upload-pages-artifact@v2
         with:
-          path: .  # root directory; change if your site is in another folder
+          path: ./  # root directory; change if your site is in another folder
 
       - name: 🚀 Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
