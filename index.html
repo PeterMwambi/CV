@@ -28,24 +28,26 @@
             --link-dark: #60a5fa;
             --link-hover-dark: #3b82f6;
             --subtle-dark: #94a3b8;
-            --gold: #e6c300;
-            /* Updated gold color */
-            --gold-hover: #d4b200;
-            /* Slightly deeper gold on hover */
-            --gold-outline: #b58a00;
-            /* Gold outline color */
 
+            --gold: #e6c300;
+            --gold-hover: #d4b200;
+            --gold-outline: #b58a00;
         }
 
         html[data-theme="light"] {
             background-color: var(--bg-light);
             color: var(--text-light);
+            background-repeat: repeat;
+            background-size: auto;
         }
 
         html[data-theme="dark"] {
             background-color: var(--bg-dark);
             color: var(--text-dark);
+            background-repeat: repeat;
+            background-size: auto;
         }
+
 
         body {
             font-family: 'Inter', sans-serif;
@@ -55,7 +57,12 @@
             color: inherit;
             line-height: 1.7;
             overflow-x: hidden;
+            height: 100vh;
+            background-repeat: no-repeat;
         }
+
+
+
 
         .container {
             max-width: 960px;
@@ -190,6 +197,30 @@
         .cta-button:hover {
             background-color: var(--gold-hover);
         }
+
+        /* Falling Binary Numbers effect */
+        .binary {
+            position: absolute;
+            font-size: 20px;
+            color: #e6c300;
+            opacity: 0.8;
+            animation: fall 5s linear infinite;
+            font-family: monospace;
+        }
+
+        @keyframes fall {
+            0% {
+                top: -20px;
+                left: calc(100% * random());
+                opacity: 0.9;
+            }
+
+            100% {
+                top: 100vh;
+                left: calc(100% * random());
+                opacity: 0;
+            }
+        }
     </style>
 </head>
 
@@ -210,7 +241,7 @@
             estate management system built for the Kenyan market 🇰🇪. It streamlines everything from property discovery
             to rent tracking and automates communication via WhatsApp Cloud API. Real value, real efficiency. 💬🏠</p>
 
-        <a href="mailto:petermwasagua@gmail.com" class="cta-button">📩 Hire Me / Collaborate</a>
+        <a href="mailto:calebmwambi@gmail.com" class="cta-button">📩 Hire Me / Collaborate</a>
 
 
         <h2>🧰 Skills & Tools of the Trade</h2>
@@ -277,6 +308,26 @@
             const preferredTheme = savedTheme || getSystemTheme();
             document.documentElement.setAttribute("data-theme", preferredTheme);
         });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const binaryCount = 50; // Number of falling binary numbers
+            const body = document.body;
+
+            for (let i = 0; i < binaryCount; i++) {
+                const binary = document.createElement("div");
+                binary.classList.add("binary");
+
+                // Randomly choose 1 or 0
+                binary.textContent = Math.random() < 0.5 ? '1' : '0';
+
+                // Set random initial position
+                binary.style.left = `${Math.random() * 100}vw`; // Random horizontal position
+                binary.style.animationDuration = `${Math.random() * 5 + 3}s`; // Random fall speed
+
+                body.appendChild(binary);
+            }
+        });
+
     </script>
 </body>
 
