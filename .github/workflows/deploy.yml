@@ -3,7 +3,7 @@ name: 🚀 Deploy CV to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # Trigger on pushes to the 'main' branch
 
 jobs:
   deploy:
@@ -20,10 +20,10 @@ jobs:
       - name: 📄 Configure Pages
         uses: actions/configure-pages@v3
 
-      - name: 📦 Upload static site
+      - name: 📦 Upload static site to GitHub Pages
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./  # root directory; change if your site is in another folder
+          path: ./  # Use the root directory or specify your subfolder
 
       - name: 🚀 Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
