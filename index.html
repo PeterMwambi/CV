@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Peter Mwambi – Full-Stack Web Developer specializing in modern, scalable, and efficient web applications in Kenya and beyond.">
+    <meta name="keywords"
+        content="Peter Mwambi, Web Developer Kenya, Laravel Developer, React Developer, Full-Stack Developer, DPZ Technologies">
+    <meta name="author" content="Peter Mwambi">
+    <link rel="icon" href="https://fav.farm/🧠" type="image/png">
     <title>Peter Mwambi | Full-Stack Web Developer</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -14,12 +20,23 @@
             background-color: #f9fafb;
             color: #111827;
             line-height: 1.7;
+            overflow-x: hidden;
         }
 
         .container {
             max-width: 960px;
             margin: auto;
             padding: 2rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1.2s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         h1,
@@ -32,6 +49,7 @@
         h1 {
             font-size: 2rem;
             margin-bottom: 0.25rem;
+            animation: fadeSlideIn 0.8s ease-out forwards;
         }
 
         h2 {
@@ -43,6 +61,18 @@
         h3 {
             font-size: 1.1rem;
             margin-top: 1rem;
+        }
+
+        @keyframes fadeSlideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
 
         p,
@@ -61,15 +91,18 @@
         a {
             color: #2563eb;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
 
         a:hover {
             text-decoration: underline;
+            color: #1d4ed8;
         }
 
         .tagline {
             font-style: italic;
             color: #6b7280;
+            animation: fadeSlideIn 1s ease-in-out forwards;
         }
     </style>
 </head>
@@ -130,7 +163,7 @@
             privacy. It’s a unique combo that adds value in fintech and legal-tech spaces. ⚖️💡</p>
 
         <h2>📬 Let’s Connect</h2>
-        <p>GitHub: <a href="https://github.com/petermwambi" target="_blank">@petermwasagua</a><br>
+        <p>GitHub: <a href="https://github.com/petermwasagua" target="_blank">@petermwasagua</a><br>
             LinkedIn: <a href="https://linkedin.com/in/peter-mwasagua" target="_blank">peter-mwasagua</a></p>
     </div>
 </body>
