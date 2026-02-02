@@ -2,333 +2,216 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Peter Mwambi – Full-Stack Web Developer specializing in modern, scalable, and efficient web applications in Kenya and beyond.">
-    <meta name="keywords"
-        content="Peter Mwambi, Web Developer Kenya, Laravel Developer, React Developer, Full-Stack Developer, DPZ Technologies">
-    <meta name="author" content="Peter Mwambi">
-    <link rel="icon" href="https://fav.farm/🧠" type="image/png">
-    <title>Peter Mwambi | Full-Stack Web Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            color-scheme: light dark;
-            --bg-light: #f9fafb;
-            --text-light: #111827;
-            --heading-light: #1f2937;
-            --link-light: #2563eb;
-            --link-hover-light: #1d4ed8;
-            --subtle-light: #6b7280;
-
-            --bg-dark: #0f172a;
-            --text-dark: #f1f5f9;
-            --heading-dark: #e2e8f0;
-            --link-dark: #60a5fa;
-            --link-hover-dark: #3b82f6;
-            --subtle-dark: #94a3b8;
-
-            --gold: #e6c300;
-            --gold-hover: #d4b200;
-            --gold-outline: #b58a00;
-        }
-
-        html[data-theme="light"] {
-            background-color: var(--bg-light);
-            color: var(--text-light);
-            background-repeat: repeat;
-            background-size: auto;
-        }
-
-        html[data-theme="dark"] {
-            background-color: var(--bg-dark);
-            color: var(--text-dark);
-            background-repeat: repeat;
-            background-size: auto;
-        }
-
-
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: inherit;
-            color: inherit;
-            line-height: 1.7;
-            overflow-x: hidden;
-            height: 100vh;
-            background-repeat: no-repeat;
-        }
-
-
-
-
-        .container {
-            max-width: 960px;
-            margin: auto;
-            padding: 2rem;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeIn 1.2s ease-out forwards;
-        }
-
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        h1,
-        h2,
-        h3 {
-            font-weight: 700;
-            color: var(--heading-dark);
-        }
-
-        html[data-theme="light"] h1,
-        html[data-theme="light"] h2,
-        html[data-theme="light"] h3 {
-            color: var(--heading-light);
-        }
-
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 0.25rem;
-            animation: fadeSlideIn 0.8s ease-out forwards;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            margin-top: 2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        h3 {
-            font-size: 1.1rem;
-            margin-top: 1rem;
-        }
-
-        @keyframes fadeSlideIn {
-            from {
-                opacity: 0;
-                transform: translateX(-30px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        p,
-        li {
-            font-size: 1rem;
-        }
-
-        ul {
-            padding-left: 1.5rem;
-        }
-
-        .section {
-            margin-bottom: 1.5rem;
-        }
-
-        a {
-            color: var(--link-dark);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        html[data-theme="light"] a {
-            color: var(--link-light);
-        }
-
-        a:hover {
-            color: var(--link-hover-dark);
-        }
-
-        html[data-theme="light"] a:hover {
-            color: var(--link-hover-light);
-        }
-
-        .tagline {
-            font-style: italic;
-            color: var(--subtle-dark);
-            animation: fadeSlideIn 1s ease-in-out forwards;
-        }
-
-        html[data-theme="light"] .tagline {
-            color: var(--subtle-light);
-        }
-
-        .theme-toggle {
-            position: fixed;
-            top: 1rem;
-            right: 1rem;
-            background: none;
-            border: 2px solid currentColor;
-            border-radius: 999px;
-            padding: 0.4rem 0.75rem;
-            font-size: 0.85rem;
-            cursor: pointer;
-            z-index: 1000;
-            color: inherit;
-        }
-
-        html[data-theme="light"] .theme-toggle {
-            color: var(--gold-outline);
-            border-color: var(--gold-outline);
-        }
-
-        .cta-button {
-            display: inline-block;
-            margin-top: 2rem;
-            padding: 0.75rem 1.5rem;
-            font-weight: 600;
-            border-radius: 999px;
-            background-color: var(--gold);
-            color: white;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background-color: var(--gold-hover);
-        }
-
-        /* Falling Binary Numbers effect */
-        .binary {
-            position: absolute;
-            font-size: 20px;
-            color: #e6c300;
-            opacity: 0.8;
-            animation: fall 5s linear infinite;
-            font-family: monospace;
-        }
-
-        @keyframes fall {
-            0% {
-                top: -20px;
-                left: calc(100% * random());
-                opacity: 0.9;
-            }
-
-            100% {
-                top: 100vh;
-                left: calc(100% * random());
-                opacity: 0;
-            }
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peter Mwambi | Graphic Designer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-zlN7FZdRrdrzN+6eL+1zvAc8lB5pJoT2F0kbcU2uw6Vb3G3dU5HCycQKJK9e1TcT12n9v+5E3qqzExPQJfU5BQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
+
 <body>
-    <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Peter Mwambi</h1>
+            <p>Graphic Designer crafting bold visuals, clean layouts, and memorable brand stories.</p>
+        </div>
+        <div class="hero-image">
+            <img src="https://drive.google.com/thumbnail?id=1NDS-cq3wcwtK0IHNbM8U7r8P8EC95eHJ&sz=w1000"
+                alt="Image from Google Drive">
+
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <div class="about-image">
+            <img src="image.jpg" alt="Brand design process">
+        </div>
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                I’m a graphic designer with a strong eye for balance, color, and typography.
+                I design visuals that communicate clearly, feel intentional, and leave a lasting impression.
+            </p>
+            <p>
+                From branding and layouts to digital graphics, I believe great design speaks without shouting.
+            </p>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio">
+        <h2>Selected Visual Work</h2>
+
+        <div class="portfolio-grid">
+            <img src="https://drive.google.com/thumbnail?id=169v8FOBhXhtmfx84faBZhKWy-1yu0UFD&sz=w1000"
+                alt="Portfolio image 1" loading="lazy" decoding="async">
+
+            <img src="https://drive.google.com/thumbnail?id=1K-YhKb5fFHhAdc5MBC4vh-H5L-iLYuNP&sz=w1000"
+                alt="Portfolio image 2" loading="lazy" decoding="async">
+
+            <img src="https://drive.google.com/thumbnail?id=1Szo20lfO_SKUPPlg_cepLvj-ltBSz37Q&sz=w1000"
+                alt="Portfolio image 3" loading="lazy" decoding="async">
+
+            <img src="https://drive.google.com/thumbnail?id=1eAMH7RpdDGZpi-AzpNjTbtS2KQs1aktM&sz=w1000"
+                alt="Portfolio image 4" loading="lazy" decoding="async">
+
+            <img src="https://drive.google.com/thumbnail?id=1xpm1lW5YdAnVoljWt3NAWsy3KFcXr4LN&sz=w1000"
+                alt="Portfolio image 5" loading="lazy" decoding="async">
+
+            <img src="https://drive.google.com/thumbnail?id=1tsTGgAtoQli6wLr6Lydcm_5nupNJ50EI&sz=w1000"
+                alt="Portfolio image 6" loading="lazy" decoding="async">
+
+            <img src="https://drive.google.com/thumbnail?id=1yDEDNvMlxZEyGx4xuhgV-8E9fr8FhYNx&sz=w1000"
+                alt="Portfolio image 7" loading="lazy" decoding="async">
+
+            <img src="https://drive.google.com/thumbnail?id=1qe44GOtpvVcA5pOR75VR4EfmKVK5hyyp&sz=w1000"
+                alt="Portfolio image 8" loading="lazy" decoding="async">
+
+            <img src="https://drive.google.com/thumbnail?id=1SdgnA3v9wj0tr_dRk9VWmS7oD0Xon19f&sz=w1000"
+                alt="Portfolio image 9" loading="lazy" decoding="async">
+        </div>
+
+    </section>
 
 
-    <div class="container">
-        <h1>Peter Mwambi</h1>
-        <p class="tagline">Full-Stack Web Developer 👨🏽‍💻 | Software Architect 🧠 | Digital Systems Innovator 🚀</p>
 
-        <p>Hey there! 👋 I'm Peter — a full-stack web developer with over five years of experience crafting scalable,
-            secure, and user-friendly digital solutions. I’m all about clean code, smart systems, and solving real-world
-            problems with practical tech. Whether it's building a Laravel back-end, coding out a slick React front-end,
-            or deploying an entire stack with GitHub Actions — I’m in my zone. 🛠️</p>
+    <!-- UI / UX STORY -->
+    <section class="ux-story">
+        <div class="ux-text">
+            <h2>My UI / UX Design Story</h2>
 
-        <p>My mission? To build tech that matters. Lately, I’ve been focused on creating impactful platforms like a real
-            estate management system built for the Kenyan market 🇰🇪. It streamlines everything from property discovery
-            to rent tracking and automates communication via WhatsApp Cloud API. Real value, real efficiency. 💬🏠</p>
+            <p>
+                My journey into UI/UX design grew naturally from graphic design.
+                I learned that good visuals are not just beautiful — they guide,
+                clarify, and create trust.
+            </p>
 
-        <a href="mailto:calebmwambi@gmail.com" class="cta-button">📩 Hire Me / Collaborate</a>
+            <p>
+                Using Figma, I design interfaces that are user-centered, visually
+                balanced, and easy to navigate. Every screen starts with purpose,
+                flow, and empathy for the user.
+            </p>
+        </div>
+
+        <div class="ux-iframes">
+            <!-- Responsive Figma iframes -->
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450"
+                src="https://embed.figma.com/design/AHTvn0DelkqbkOTKLAYg6M/ACK-St-Marys-Website?node-id=0-1&embed-host=share"
+                allowfullscreen></iframe>
+
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450"
+                src="https://embed.figma.com/design/aFgnh9AOveTE4oqHSpTDNj/DPZ-Designs?node-id=0-1&embed-host=share"
+                allowfullscreen></iframe>
+
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services">
+        <h2>What I Design</h2>
+
+        <div class="service-cards">
+            <div class="card">Brand Identity</div>
+            <div class="card">Posters & Flyers</div>
+            <div class="card">Social Media Graphics</div>
+            <div class="card">Logos</div>
+            <div class="card">Web Interfaces</div>
+        </div>
+    </section>
 
 
-        <h2>🧰 Skills & Tools of the Trade</h2>
-        <ul>
-            <li><strong>Front-End:</strong> HTML5, CSS3, Tailwind CSS, Bootstrap 5, JavaScript (Vanilla), React.js,
-                Vue.js, HTMX, UI/UX with Figma, Illustrator, Photoshop</li>
-            <li><strong>Back-End:</strong> PHP (Laravel), Java (Spring Boot), Node.js (Express), MySQL, MongoDB, REST,
-                GraphQL, session auth, file uploads, routing engines</li>
-            <li><strong>DevOps:</strong> Git, GitHub Actions, FTP deployment, CI/CD automation, PowerShell, Termux</li>
-            <li><strong>Other Tools:</strong> GitHub, custom error loggers, templating engines, CLI utilities</li>
-        </ul>
+    <!-- CONTACT -->
+    <section class="contact">
+        <h2>Let’s Work Together</h2>
 
-        <h2>🚧 Cool Projects</h2>
-        <h3>🏡 1. Rental Real Estate Platform (Kenya-Focused)</h3>
-        <p>A feature-rich rental app built for the local market. Think dynamic listings, lease management, rent
-            tracking, landlord dashboards — all wrapped in a smooth UI. Integrated with WhatsApp Cloud API for automated
-            tenant communication. 📲</p>
+        <div class="contact-box">
+            <div class="contact-grid">
 
-        <h3>⚙️ 2. Custom PHP Framework</h3>
-        <p>I rolled up my sleeves and built a lightweight PHP framework from scratch — complete with routing,
-            templating, session support, and middleware. Minimal, modular, and made for devs who like control. 🔧</p>
+                <!-- SOCIAL MEDIA LEFT -->
+                <div class="contact-socials">
+                    <a href="https://github.com/petermwambi" target="_blank">
+                        <!-- Github SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                            id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
+                            xml:space="preserve" width="512" height="512">
+                            <g>
+                                <path style="fill-rule:evenodd;clip-rule:evenodd;"
+                                    d="M12,0.296c-6.627,0-12,5.372-12,12c0,5.302,3.438,9.8,8.206,11.387   c0.6,0.111,0.82-0.26,0.82-0.577c0-0.286-0.011-1.231-0.016-2.234c-3.338,0.726-4.043-1.416-4.043-1.416   C4.421,18.069,3.635,17.7,3.635,17.7c-1.089-0.745,0.082-0.729,0.082-0.729c1.205,0.085,1.839,1.237,1.839,1.237   c1.07,1.834,2.807,1.304,3.492,0.997C9.156,18.429,9.467,17.9,9.81,17.6c-2.665-0.303-5.467-1.332-5.467-5.93   c0-1.31,0.469-2.381,1.237-3.221C5.455,8.146,5.044,6.926,5.696,5.273c0,0,1.008-0.322,3.301,1.23   C9.954,6.237,10.98,6.104,12,6.099c1.02,0.005,2.047,0.138,3.006,0.404c2.29-1.553,3.297-1.23,3.297-1.23   c0.653,1.653,0.242,2.873,0.118,3.176c0.769,0.84,1.235,1.911,1.235,3.221c0,4.609-2.807,5.624-5.479,5.921   c0.43,0.372,0.814,1.103,0.814,2.222c0,1.606-0.014,2.898-0.014,3.293c0,0.319,0.216,0.694,0.824,0.576   c4.766-1.589,8.2-6.085,8.2-11.385C24,5.669,18.627,0.296,12,0.296z" />
+                                <path
+                                    d="M4.545,17.526c-0.026,0.06-0.12,0.078-0.206,0.037c-0.087-0.039-0.136-0.121-0.108-0.18   c0.026-0.061,0.12-0.078,0.207-0.037C4.525,17.384,4.575,17.466,4.545,17.526L4.545,17.526z" />
+                                <path
+                                    d="M5.031,18.068c-0.057,0.053-0.169,0.028-0.245-0.055c-0.079-0.084-0.093-0.196-0.035-0.249   c0.059-0.053,0.167-0.028,0.246,0.056C5.076,17.903,5.091,18.014,5.031,18.068L5.031,18.068z" />
+                                <path
+                                    d="M5.504,18.759c-0.074,0.051-0.194,0.003-0.268-0.103c-0.074-0.107-0.074-0.235,0.002-0.286   c0.074-0.051,0.193-0.005,0.268,0.101C5.579,18.579,5.579,18.707,5.504,18.759L5.504,18.759z" />
+                                <path
+                                    d="M6.152,19.427c-0.066,0.073-0.206,0.053-0.308-0.046c-0.105-0.097-0.134-0.234-0.068-0.307   c0.067-0.073,0.208-0.052,0.311,0.046C6.191,19.217,6.222,19.355,6.152,19.427L6.152,19.427z" />
+                                <path
+                                    d="M7.047,19.814c-0.029,0.094-0.164,0.137-0.3,0.097C6.611,19.87,6.522,19.76,6.55,19.665   c0.028-0.095,0.164-0.139,0.301-0.096C6.986,19.609,7.075,19.719,7.047,19.814L7.047,19.814z" />
+                                <path
+                                    d="M8.029,19.886c0.003,0.099-0.112,0.181-0.255,0.183c-0.143,0.003-0.26-0.077-0.261-0.174c0-0.1,0.113-0.181,0.256-0.184   C7.912,19.708,8.029,19.788,8.029,19.886L8.029,19.886z" />
+                                <path
+                                    d="M8.943,19.731c0.017,0.096-0.082,0.196-0.224,0.222c-0.139,0.026-0.268-0.034-0.286-0.13   c-0.017-0.099,0.084-0.198,0.223-0.224C8.797,19.574,8.925,19.632,8.943,19.731L8.943,19.731z" />
+                            </g>
+                        </svg>
+                        PeterMwambi
+                    </a>
+                    <a href="https://linkedin.com/in/peter-mwasagua" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="Capa_32" data-name="Capa 32" viewBox="0 0 24 24">
+                            <path d="m20.65,18.172h-.174v-.353h.22c.114,0,.244.018.244.167,0,.171-.131.185-.29.185Z" />
+                            <path
+                                d="m20.639,17.366c-.473.008-.85.398-.843.871.008.473.398.851.871.843h0s.022,0,.022,0c.463-.01.83-.393.821-.856v-.014c-.008-.473-.398-.851-.871-.843h0Zm.31,1.378l-.285-.449-.004-.005h-.184v.454h-.149v-1.043h.398c.246,0,.367.095.367.294,0,.006,0,.012,0,.018-.001.147-.095.266-.289.266l.308.465h-.16Z" />
+                            <path
+                                d="m12,0h0C5.373,0,0,5.373,0,12h0c0,6.627,5.373,12,12,12h0c6.627,0,12-5.373,12-12h0C24,5.373,18.627,0,12,0Zm7.037,18.056c-.008.578-.483,1.042-1.062,1.034H5.76c-.577.006-1.051-.457-1.058-1.034V5.79c.007-.577.48-1.04,1.058-1.033h12.215c.578-.009,1.053.454,1.062,1.032v12.267Zm1.65,1.136c-.54.005-.982-.428-.987-.968-.005-.539.428-.981.968-.987h.019c.532.005.963.436.968.968.005.539-.428.981-.968.987Zm-6.32-9.232c-.823-.03-1.596.394-2.012,1.105h-.028v-.935h-2.039v6.84h2.124v-3.383c0-.893.169-1.756,1.276-1.756,1.09,0,1.104,1.021,1.104,1.814v3.326h2.124v-3.752c0-1.843-.396-3.258-2.549-3.258h0Zm-7.54,7.01h2.126v-6.84h-2.126v6.84Zm1.064-10.24c-.681,0-1.233.552-1.233,1.233,0,.681.552,1.232,1.233,1.232s1.233-.552,1.233-1.233c0-.681-.552-1.233-1.233-1.232Z" />
+                        </svg>
 
-        <h3>🧩 3. Node.js Router & SQL Query Builder</h3>
-        <p>This one’s for the power users: a flexible Express-style router with built-in middleware, body parsing, file
-            uploads, cookies, and DB-controlled sessions. The query builder is fully fluent and supports complex SQL
-            chains, joins, nested conditions — even raw queries. ⚡</p>
+                        Peter Mwasagua
+                    </a>
+                </div>
 
-        <h3>🌐 4. DPZ Technologies</h3>
-        <p>I founded <a href="https://github.com/dpztechnologies" target="_blank">DPZ Technologies</a> — a GitHub
-            organization dedicated to open-source and client-driven dev work that solves meaningful problems in emerging
-            markets. 🎯</p>
+                <!-- DIVIDER -->
+                <div class="contact-divider"></div>
 
-        <h2>🧭 Dev Philosophy</h2>
-        <p>I’m a big believer in code that’s clean, maintainable, and built with empathy for the next developer (even if
-            that’s me in six months 😅). I try to make every utility class (like my <code>Utils</code> helper for DOM
-            interactions) or feature-packed backend system as intuitive and bulletproof as possible.</p>
-        <p>Security and stability are top priorities. My cookie-based session system is simple but rock solid, and I’ve
-            built centralized error logging to keep things sane in production. 🛡️</p>
+                <!-- CONTACT INFO RIGHT -->
+                <div class="contact-info">
+                    <p>
+                        <!-- Phone SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"
+                            width="512" height="512">
+                            <path
+                                d="M13,1a1,1,0,0,1,1-1A10.011,10.011,0,0,1,24,10a1,1,0,0,1-2,0,8.009,8.009,0,0,0-8-8A1,1,0,0,1,13,1Zm1,5a4,4,0,0,1,4,4,1,1,0,0,0,2,0,6.006,6.006,0,0,0-6-6,1,1,0,0,0,0,2Zm9.093,10.739a3.1,3.1,0,0,1,0,4.378l-.91,1.049c-8.19,7.841-28.12-12.084-20.4-20.3l1.15-1A3.081,3.081,0,0,1,7.26.906c.031.031,1.884,2.438,1.884,2.438a3.1,3.1,0,0,1-.007,4.282L7.979,9.082a12.781,12.781,0,0,0,6.931,6.945l1.465-1.165a3.1,3.1,0,0,1,4.281-.006S23.062,16.708,23.093,16.739Zm-1.376,1.454s-2.393-1.841-2.424-1.872a1.1,1.1,0,0,0-1.549,0c-.027.028-2.044,1.635-2.044,1.635a1,1,0,0,1-.979.152A15.009,15.009,0,0,1,5.9,9.3a1,1,0,0,1,.145-1S7.652,6.282,7.679,6.256a1.1,1.1,0,0,0,0-1.549c-.031-.03-1.872-2.425-1.872-2.425a1.1,1.1,0,0,0-1.51.039l-1.15,1C-2.495,10.105,14.776,26.418,20.721,20.8l.911-1.05A1.121,1.121,0,0,0,21.717,18.193Z" />
+                        </svg>
+                        <a href="tel:0114958431">0114958431</a>
+                    </p>
+                    <p>
+                        <!-- Email SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512"
+                            height="512">
+                            <path
+                                d="M19,1H5A5.006,5.006,0,0,0,0,6V18a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V6A5.006,5.006,0,0,0,19,1ZM5,3H19a3,3,0,0,1,2.78,1.887l-7.658,7.659a3.007,3.007,0,0,1-4.244,0L2.22,4.887A3,3,0,0,1,5,3ZM19,21H5a3,3,0,0,1-3-3V7.5L8.464,13.96a5.007,5.007,0,0,0,7.072,0L22,7.5V18A3,3,0,0,1,19,21Z" />
+                        </svg>
+                        <a href="mailto:petermwasagua@gmail.com">petermwasagua@gmail.com</a>
+                    </p>
+                </div>
 
-        <h2>🎓 Bonus: Law Meets Tech</h2>
-        <p>I’m also exploring commercial law — giving me an edge when it comes to compliance, contracts, and data
-            privacy. It’s a unique combo that adds value in fintech and legal-tech spaces. ⚖️💡</p>
+            </div>
+        </div>
+    </section>
 
-        <h2>📬 Let’s Connect</h2>
-        <p>GitHub: <a href="https://github.com/petermwasagua" target="_blank">@petermwasagua</a><br>
-            LinkedIn: <a href="https://linkedin.com/in/peter-mwasagua" target="_blank">peter-mwasagua</a></p>
-    </div>
 
-    <script>
-        function getSystemTheme() {
-            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        }
 
-        function toggleTheme() {
-            const html = document.documentElement;
-            const current = html.getAttribute("data-theme") || getSystemTheme();
-            const next = current === "dark" ? "light" : "dark";
-            html.setAttribute("data-theme", next);
-            localStorage.setItem("theme", next);
-        }
 
-        window.addEventListener("DOMContentLoaded", () => {
-            const savedTheme = localStorage.getItem("theme");
-            const preferredTheme = savedTheme || getSystemTheme();
-            document.documentElement.setAttribute("data-theme", preferredTheme);
-        });
 
-        document.addEventListener("DOMContentLoaded", function () {
-            const binaryCount = 50; // Number of falling binary numbers
-            const body = document.body;
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Peter Mwambi · Graphic Designer</p>
+    </footer>
 
-            for (let i = 0; i < binaryCount; i++) {
-                const binary = document.createElement("div");
-                binary.classList.add("binary");
-
-                // Randomly choose 1 or 0
-                binary.textContent = Math.random() < 0.5 ? '1' : '0';
-
-                // Set random initial position
-                binary.style.left = `${Math.random() * 100}vw`; // Random horizontal position
-                binary.style.animationDuration = `${Math.random() * 5 + 3}s`; // Random fall speed
-
-                body.appendChild(binary);
-            }
-        });
-
-    </script>
 </body>
 
 </html>
